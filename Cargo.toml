@@ -1,0 +1,19 @@
+[package]
+name = "wgpu-replicate"
+version = "0.1.0"
+authors = ["Aron Granberg <aron.granberg@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "graphica"
+path = "src/main.rs"
+
+[dependencies]
+wgpu = { version = "0.7", features = ["trace"] }
+winit = "0.24.0"
+log = "0.4"
+env_logger = "0.8"
+async-std = "1.6"
+
+[build]
+incremental = true
